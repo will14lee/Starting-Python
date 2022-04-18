@@ -71,15 +71,32 @@
 
 
 # Madlib game
-electronic= input("Input an electronic: ")
-name= input("Input a name: ")
-date_idea= input("Input a date idea: ")
-verb= input("Input a verb: ")
-adverb= input("Input a adverb: ")
-breakfast_item= input("Input a breakfast item: ")
-tv_show= input("Input a tv show: ")
+# electronic= input("Input an electronic: ")
+# name= input("Input a name: ")
+# date_idea= input("Input a date idea: ")
+# verb= input("Input a verb: ")
+# adverb= input("Input a adverb: ")
+# breakfast_item= input("Input a breakfast item: ")
+# tv_show= input("Input a tv show: ")
 
-print("I want to be a " + electronic + ".")
-print("Because if I was a " + electronic + " maybe " + name + " would be willing to go " + date_idea + " with me.")
-print("But knowing my luck, I will only be able to " + verb + " " + adverb)
-print("I really want to eat some " + breakfast_item + " while watching " + tv_show)
+# print("I want to be a " + electronic + ".")
+# print("Because if I was a " + electronic + " maybe " + name + " would be willing to go " + date_idea + " with me.")
+# print("But knowing my luck, I will only be able to " + verb + " " + adverb)
+# print("I really want to eat some " + breakfast_item + " while watching " + tv_show)
+
+sentence= ["let's", "eat", "Grandpa"]
+print(sentence[0] + " " + sentence[1] + " " + sentence[2])
+print(sentence[1] + " " + sentence[0] + " " + sentence[2])
+print(sentence[1] + " " + sentence[2] + " " + sentence[0])
+print(sentence[2] + " " + sentence[1] + " " + sentence[0])
+working_sentence= print(sentence[2] + " " + sentence[0] + " " + sentence[1])
+
+sentence[2]= "Granpear"
+print(sentence[2] + " " + sentence[0] + " " + sentence[1])
+
+other_sentence= ["Roast beef", "Fried Chicken", "a grape", "nothing"]
+
+sentence.append("Borscht")
+print(sentence[1:3])
+other_sentence.insert(1, "Lemons")
+print(other_sentence)

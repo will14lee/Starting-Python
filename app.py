@@ -94,15 +94,15 @@
 # sentence[2]= "Granpear"
 # print(sentence[2] + " " + sentence[0] + " " + sentence[1])
 
-from copy import copy
+# from copy import copy
 
 
-other_sentence= ["Roast beef", "Fried Chicken", "a grape", "nothing"]
+# other_sentence= ["Roast beef", "Fried Chicken", "a grape", "nothing"]
 
 # sentence.append("Borscht")
 # print(sentence[1:3])
-print("This is the initial list=")
-print(other_sentence)
+# print("This is the initial list=")
+# print(other_sentence)
 
 # # to put something before fried chicken
 # print("Adding Lemons to the list")
@@ -128,7 +128,7 @@ print(other_sentence)
 
 
 
-# pop, index, count, count, sort, reverse, copy
+# pop, index, count, sort, reverse, copy
 
 
 
@@ -148,7 +148,21 @@ print(other_sentence)
 # other_sentence.sort()
 
 # other_sentence.reverse()
-other_sentence2= other_sentence.copy()
+# other_sentence2= other_sentence.copy()
 
-print("This is other_sentence2 list")
-print(other_sentence2)
+# print("This is other_sentence2 list")
+# print(other_sentence2)
+
+
+
+
+
+
+
+
+# tuples
+coordinates= (4, 5)
+print(coordinates[0])
+# 4, if want 5 [1]
+# tuples are immutable i.e coordinates[1]= 10 is a no go
+

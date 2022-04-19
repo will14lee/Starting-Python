@@ -161,8 +161,60 @@
 
 
 # tuples
-coordinates= (4, 5)
-print(coordinates[0])
+# coordinates= (4, 5)
+# print(coordinates[0])
 # 4, if want 5 [1]
 # tuples are immutable i.e coordinates[1]= 10 is a no go
+# can have a list of tuples
+# bunch_of_coordinates=[(4, 5), (7,8), (10,11)]
 
+
+
+
+# functions
+# from subprocess import call
+
+
+# def say_hi(name): #normally for 2 word functions don't need to have an underscore
+    # print("Hello " + name) #Have to indent for functions will normally already indent auto
+
+
+# say_hi("Mia")
+
+
+
+
+# CHALLENGE! create a function that eats the first variable of a list
+from random import randrange
+
+
+breakfast= ["eggs", "bacon", "sausage", "toast"]
+lunch= ["sandwich", "burger", "fried chicken", "hot dog"]
+dinner= ["steak", "fish", "lasagna", "spiders"]
+
+my_friends= ["Amy", "Stewart", "Tammy", "Drake"]
+# def yumyum(list):
+#     list.remove(list[0])
+#     print(list)
+
+# yumyum(breakfast)
+# yumyum(lunch)
+# yumyum(dinner)
+
+
+# print(breakfast[0:len(breakfast)]) #this is just another way to show the entire list
+# print(len(breakfast))
+# breakfast.pop() #this would end up removing the last item on the list
+# print(breakfast)
+
+
+# this function goes through all of the friends and prints out each of their name and what they'd like to eat
+def randomtaste(friend_list, food_list):
+    num= 0
+    while num<len(friend_list):
+        print(friend_list[num] + " says, I'd like to eat the " + food_list[randrange(0, len(food_list))] + ".")
+        num= num + 1
+
+
+
+randomtaste(my_friends, lunch)

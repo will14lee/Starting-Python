@@ -185,14 +185,14 @@
 
 
 # CHALLENGE! create a function that eats the first variable of a list
-from random import randrange
+# from random import randrange
 
 
-breakfast= ["eggs", "bacon", "sausage", "toast"]
-lunch= ["sandwich", "burger", "fried chicken", "hot dog"]
-dinner= ["steak", "fish", "lasagna", "spiders"]
+# breakfast= ["eggs", "bacon", "sausage", "toast"]
+# lunch= ["sandwich", "burger", "fried chicken", "hot dog"]
+# dinner= ["steak", "fish", "lasagna", "spiders"]
 
-my_friends= ["Amy", "Stewart", "Tammy", "Drake"]
+# my_friends= ["Amy", "Stewart", "Tammy", "Drake"]
 # def yumyum(list):
 #     list.remove(list[0])
 #     print(list)
@@ -209,12 +209,32 @@ my_friends= ["Amy", "Stewart", "Tammy", "Drake"]
 
 
 # this function goes through all of the friends and prints out each of their name and what they'd like to eat
-def randomtaste(friend_list, food_list):
-    num= 0
-    while num<len(friend_list):
-        print(friend_list[num] + " says, I'd like to eat the " + food_list[randrange(0, len(food_list))] + ".")
-        num= num + 1
+# def randomtaste(friend_list, food_list):
+#     num= 0
+#     while num<len(friend_list):
+#         print(friend_list[num] + " says, I'd like to eat the " + food_list[randrange(0, len(food_list))] + ".")
+#         num= num + 1
 
 
 
-randomtaste(my_friends, lunch)
+# randomtaste(my_friends, dinner)
+
+
+# function is a simple multiplication problem giver. You input a pair of numbers which you must multiply 
+# and if you give the right answer than it tells you if you are correct, if you are not it will tell you so 
+numbers1= (4, 5)
+numbers2= (6, 7)
+numbers3= (8, 9)
+
+
+def doing_math_problems(numbers):
+    answer= input("What is " + str(numbers[0]) + " x " + str(numbers[1]) + "?: ")
+    correct= numbers[0]*numbers[1]
+    if int(answer) == correct:# print(numbers[1])
+        print(str(correct) + " is correct.")
+    else:
+        print(answer + " is incorrect.")
+        print("The correct answer is " + str(correct))
+
+
+doing_math_problems(numbers3)

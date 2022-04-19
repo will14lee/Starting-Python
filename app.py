@@ -220,21 +220,41 @@
 # randomtaste(my_friends, dinner)
 
 
-# function is a simple multiplication problem giver. You input a pair of numbers which you must multiply 
-# and if you give the right answer than it tells you if you are correct, if you are not it will tell you so 
-numbers1= (4, 5)
-numbers2= (6, 7)
-numbers3= (8, 9)
+# function is a simple multiplication problem giver. The argument is a pair of numbers, and the input asks you to
+# solve the multiplication problem. The function will tell you if you are correct. If you are not, it'll tell you
+# that you are incorrect and give you the correct answer 
+# numbers1= (4, 5)
+# numbers2= (6, 7)
+# numbers3= (8, 9)
 
 
-def doing_math_problems(numbers):
-    answer= input("What is " + str(numbers[0]) + " x " + str(numbers[1]) + "?: ")
-    correct= numbers[0]*numbers[1]
-    if int(answer) == correct:# print(numbers[1])
-        print(str(correct) + " is correct.")
-    else:
-        print(answer + " is incorrect.")
-        print("The correct answer is " + str(correct))
+# def doing_math_problems(numbers):
+#     answer= input("What is " + str(numbers[0]) + " x " + str(numbers[1]) + "?: ")
+#     correct= numbers[0]*numbers[1]
+#     if int(answer) == correct:# print(numbers[1])
+#         return str(correct) + " is correct."
+#     else:
+#         return (
+#             answer + " is incorrect. "
+#             "The correct answer is " + str(correct)
+#             )
 
 
-doing_math_problems(numbers3)
+# print(doing_math_problems(numbers3))
+
+
+
+
+
+# if, else, elif, or, and
+
+
+
+# ethnicity= "Japanese"
+# height= "Short"
+
+# if ethnicity== "Korean" or height== "Tall":
+#     print("You are a Korean or you are tall, or you are both.")
+# else:
+#     print("You are not a Korean.")
+#     print("You are a " + height.lower() + " " + ethnicity)

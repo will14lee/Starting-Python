@@ -246,7 +246,7 @@
 
 
 
-# if, else, elif, or, and
+# if, else, elif, or, and, not
 
 
 
@@ -258,3 +258,29 @@
 # else:
 #     print("You are not a Korean.")
 #     print("You are a " + height.lower() + " " + ethnicity)
+
+
+
+# a better calculator
+num1= input("Number 1 is: ")
+operator= input("The operator is: ")
+num2= input("Number 2 is: ")
+
+num1=int(num1)
+num2=int(num2)
+
+if operator== "+":
+    answer=num1+num2
+    print(str(answer))
+elif operator== "-":
+    answer=num1-num2
+    print(str(answer))
+elif operator== "*":
+    answer=num1*num2
+    print(str(answer))
+elif operator== "/":
+    answer=num1/num2
+    print(str(answer))
+else:
+    print("Invalid operator")
+
